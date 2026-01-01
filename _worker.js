@@ -1,13 +1,11 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (url.pathname.startsWith('/api/')) {
-      return new Response(JSON.stringify({ status: "API_ACTIVE" }), { headers: { "Content-Type": "application/json" } });
-    }
+    if (url.pathname.includes('wrangler')) return new Response(null, { status: 404 });
     try {
       const response = await env.ASSETS.fetch(request);
       if (response.status === 404 && !url.pathname.includes('.')) {
-        return env.ASSETS.fetch(new URL('/index.html', url.origin));
+        return await env.ASSETS.fetch(new URL('/index.html', url.origin));
       }
       return response;
     } catch (e) {
