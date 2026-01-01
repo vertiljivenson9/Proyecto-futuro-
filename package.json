@@ -1,6 +1,6 @@
 {
   "name": "vertil-os",
-  "version": "17.0.0",
+  "version": "18.0.0",
   "scripts": {
     "build": "npx esbuild index.tsx --bundle --outfile=bundle.js --format=esm --jsx=automatic --minify --loader:.ts=ts --loader:.tsx=tsx"
   },
