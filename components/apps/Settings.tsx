@@ -1,1 +1,0 @@
-// Código real de Settings actualizado con desinstalación funcional... (Inyectado por el Kernel)
