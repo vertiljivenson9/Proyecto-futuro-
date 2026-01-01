@@ -7,10 +7,7 @@ export default {
         const content = await response.blob();
         return new Response(content, {
           status: response.status,
-          headers: {
-            ...Object.fromEntries(response.headers),
-            'Content-Type': 'application/javascript; charset=utf-8'
-          }
+          headers: { ...Object.fromEntries(response.headers), 'Content-Type': 'application/javascript; charset=utf-8' }
         });
       }
       if (response.status === 404 && !url.pathname.includes('.')) {
@@ -18,7 +15,7 @@ export default {
       }
       return response;
     } catch (e) {
-      return new Response("VERTIL_KERNEL_PANIC: " + e.message, { status: 500 });
+      return new Response("KERNEL_PANIC: " + e.message, { status: 500 });
     }
   }
 };
