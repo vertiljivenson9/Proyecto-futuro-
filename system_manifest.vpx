@@ -1,21 +1,21 @@
 {
   "machine_id": "V-MJAWLJG4LJIZNS",
-  "version": "10.0.0-SOVEREIGN",
+  "version": "11.0.0-SOVEREIGN",
   "registry": {
     "wallpaper": "/user/wallpaper.img",
     "theme": "dark",
     "machine_id": "V-MJAWLJG4LJIZNS",
-    "current_ip": "200.88.235.121",
-    "virtual_mac": "ab:5a:93:a2:39:cd",
+    "current_ip": "200.88.235.25",
+    "virtual_mac": "20:d3:d3:ee:ca:c6",
     "drivers": {
       "net": "active",
       "tor-bridge": "active",
       "firewall": "active",
       "watchdog": "active"
     },
-    "lastBoot": 1767228568769,
+    "lastBoot": 1767229300017,
     "securityEnabled": false,
     "adminPin": "2002"
   },
-  "timestamp": 1767228660247
+  "timestamp": 1767229332269
 }

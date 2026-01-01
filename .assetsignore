@@ -1,4 +1,7 @@
 _worker.js
-wrangler.jsonc
+wrangler.toml
+.assetsignore
 node_modules
 .git
+metadata.json
+system_manifest.vpx
