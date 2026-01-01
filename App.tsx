@@ -28,8 +28,8 @@ const App: React.FC = () => {
   const openWindow = useCallback((appId: string, title: string, icon: string, initialPath?: string) => {
     setWindows(prev => {
       const existing = prev.find(w => w.appId === appId);
-      if (existing) return prev.map(w => w.appId === appId ? { ...w, isMinimized: false, zIndex: Math.max(...prev.map(x=>x.zIndex))+1 } : w);
-      return [...prev, { id: crypto.randomUUID(), title, icon, isOpen: true, isMinimized: false, isMaximized: false, zIndex: 100 + prev.length, appId, initialPath, x: 50+(prev.length*20), y: 50+(prev.length*20), width: 850, height: 550 }];
+      if (existing) return prev.map(w => w.appId === appId ? { ...w, isMinimized: false, zIndex: Math.max(...prev.map(x=>x.zIndex), 100)+1 } : w);
+      return [...prev, { id: crypto.randomUUID(), title, icon, isOpen: true, isMinimized: false, isMaximized: false, zIndex: 101 + prev.length, appId, initialPath, x: 50+(prev.length*20), y: 50+(prev.length*20), width: 850, height: 550 }];
     });
   }, []);
 
