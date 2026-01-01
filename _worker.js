@@ -4,7 +4,7 @@ export default {
     try {
       let res = await env.ASSETS.fetch(request);
       if (res.status === 404 && !url.pathname.includes('.')) {
-        res = await env.ASSETS.fetch(new URL('/index.html', url.origin));
+        return await env.ASSETS.fetch(new URL('/index.html', url.origin));
       }
       return res;
     } catch (e) { return new Response("Error", { status: 500 }); }
