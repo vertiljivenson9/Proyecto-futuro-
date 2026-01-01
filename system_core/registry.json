@@ -2,15 +2,15 @@
   "wallpaper": "/user/wallpaper.img",
   "theme": "dark",
   "machine_id": "V-MJAWLJG4LJIZOS",
-  "current_ip": "200.88.239.35",
-  "virtual_mac": "77:88:43:8a:13:c7",
+  "current_ip": "200.88.239.107",
+  "virtual_mac": "85:1c:07:61:fa:e4",
   "drivers": {
     "net": "active",
     "tor-bridge": "active",
     "firewall": "active",
     "watchdog": "active"
   },
-  "lastBoot": 1767238599114,
+  "lastBoot": 1767238984113,
   "securityEnabled": false,
   "adminPin": "2002"
 }

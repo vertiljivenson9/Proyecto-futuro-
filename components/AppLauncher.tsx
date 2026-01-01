@@ -1,0 +1,1 @@
+// Switch maestro de ejecución de aplicaciones

@@ -1,0 +1,1 @@
+// Editor hexadecimal del registro de kernel

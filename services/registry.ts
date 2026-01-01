@@ -1,0 +1,1 @@
+// Gestión de Machine ID y Registro de Configuración

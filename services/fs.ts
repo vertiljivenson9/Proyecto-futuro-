@@ -1,0 +1,1 @@
+// Implementación de IndexedDB para VertilFS_v2

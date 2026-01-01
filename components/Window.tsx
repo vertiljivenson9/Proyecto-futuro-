@@ -1,0 +1,1 @@
+// Lógica de ventanas, drag & drop y maximización

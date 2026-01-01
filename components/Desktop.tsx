@@ -1,0 +1,1 @@
+// Renderizado de categorías de apps y barra de tareas

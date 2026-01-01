@@ -1,0 +1,1 @@
+// Código de App.tsx (BIOS + Router de Login/Desktop)
