@@ -1,7 +1,10 @@
 {
-  "name": "vertil-os-production",
-  "version": "23.1.0",
+  "name": "vertil-os-sovereign",
+  "version": "23.5.0",
   "private": true,
+  "scripts": {
+    "build": "npx esbuild index.tsx --bundle --outfile=bundle.js --format=esm --jsx=automatic --minify"
+  },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

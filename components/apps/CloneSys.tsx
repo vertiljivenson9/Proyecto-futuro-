@@ -1,3 +1,0 @@
-import React from 'react';
-import { Kernel } from '../../services/kernel';
-// CloneSys Source...
