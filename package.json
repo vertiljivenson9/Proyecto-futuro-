@@ -1,12 +1,14 @@
 {
   "name": "vertil-os",
   "version": "19.0.0",
+  "private": true,
   "scripts": {
     "build": "npx esbuild index.tsx --bundle --outfile=bundle.js --format=esm --jsx=automatic --minify --loader:.ts=ts --loader:.tsx=tsx"
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "lucide-react": "^0.454.0"
   },
   "devDependencies": {
     "esbuild": "^0.24.0"
