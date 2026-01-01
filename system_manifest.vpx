@@ -1,21 +1,21 @@
 {
-  "machine_id": "V-MTKWLJE2NY4YMJ",
-  "version": "14.0.0-SOVEREIGN",
+  "machine_id": "V-MTI3LJAUMC4XLT",
+  "version": "15.0.0-SOVEREIGN",
   "registry": {
     "wallpaper": "/user/wallpaper.img",
     "theme": "dark",
-    "machine_id": "V-MTKWLJE2NY4YMJ",
-    "current_ip": "190.167.227.121",
-    "virtual_mac": "c6:72:10:bc:26:ee",
+    "machine_id": "V-MTI3LJAUMC4XLT",
+    "current_ip": "127.0.0.1",
+    "virtual_mac": "9d:70:09:75:77:f2",
     "drivers": {
       "net": "active",
       "tor-bridge": "active",
       "firewall": "active",
       "watchdog": "active"
     },
-    "lastBoot": 1767231089573,
+    "lastBoot": 1767231657589,
     "securityEnabled": false,
     "adminPin": "2002"
   },
-  "timestamp": 1767231119712
+  "timestamp": 1767231697672
 }

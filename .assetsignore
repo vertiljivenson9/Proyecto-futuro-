@@ -6,3 +6,4 @@ node_modules
 .github
 metadata.json
 system_manifest.vpx
+bundle.js.map
