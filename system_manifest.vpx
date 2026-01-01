@@ -1,0 +1,21 @@
+{
+  "machine_id": "V-MTKWLJE2NY4YMJ",
+  "version": "5.0.0-TOTAL-CORE",
+  "deployedAt": 1767226727226,
+  "registry": {
+    "wallpaper": "/user/wallpaper.img",
+    "theme": "dark",
+    "machine_id": "V-MTKWLJE2NY4YMJ",
+    "current_ip": "190.167.227.121",
+    "virtual_mac": "36:4e:d8:d6:07:a7",
+    "drivers": {
+      "net": "active",
+      "tor-bridge": "active",
+      "firewall": "active",
+      "watchdog": "active"
+    },
+    "lastBoot": 1767226684348,
+    "securityEnabled": false,
+    "adminPin": "2002"
+  }
+}
