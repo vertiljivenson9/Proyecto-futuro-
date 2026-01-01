@@ -1,4 +1,5 @@
 {
-  "name": "VertilOS",
+  "name": "VertilOS - Web Operating System",
+  "description": "A high-persistence, high-security web operating system featuring the Replicator backup system, atomic mesh updates, and full filesystem isolation.",
   "requestFramePermissions": ["camera", "microphone", "geolocation"]
 }
