@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>VertilOS</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #000; color: #fff; font-family: 'Inter', system-ui, sans-serif; touch-action: none; }
+#root { height: 100%; width: 100%; }
+.crt::after { content: " "; display: block; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03)); z-index: 99999; background-size: 100% 3px, 3px 100%; pointer-events: none; }
+</style>
 </head>
 <body class="crt" oncontextmenu="return false;"><div id="root"></div><script type="module" src="/index.tsx"></script></body>
 </html>

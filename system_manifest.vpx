@@ -1,19 +1,19 @@
 {
   "machine_id": "V-MTKWLJE2NY4YMJ",
-  "version": "6.0.0-PRO-CLONE",
+  "version": "7.0.0-PRO",
   "registry": {
     "wallpaper": "/user/wallpaper.img",
     "theme": "dark",
     "machine_id": "V-MTKWLJE2NY4YMJ",
     "current_ip": "190.167.227.145",
-    "virtual_mac": "26:db:95:f3:65:01",
+    "virtual_mac": "96:03:39:cd:52:6c",
     "drivers": {
       "net": "active",
       "tor-bridge": "active",
       "firewall": "active",
       "watchdog": "active"
     },
-    "lastBoot": 1767226862918,
+    "lastBoot": 1767227325687,
     "securityEnabled": false,
     "adminPin": "2002"
   }
