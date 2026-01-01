@@ -1,3 +1,2 @@
-export enum RunLevel { BOOT=0, KERNEL=1, USER=3 }
-export interface Inode { id: string; name: string; type: 'file'|'directory'; path: string; content?: string; size: number; namespace: string; }
+export interface Inode { id: string; name: string; type: string; path: string; content?: string; size: number; namespace: string; }
 export interface WindowState { id: string; title: string; icon: string; isOpen: boolean; appId: string; zIndex: number; x: number; y: number; width: number|string; height: number|string; isMinimized: boolean; isMaximized: boolean; }

@@ -3,14 +3,14 @@
   "theme": "dark",
   "machine_id": "V-MJAWLJG4LJIZOS",
   "current_ip": "200.88.239.35",
-  "virtual_mac": "c8:d0:a9:81:88:7f",
+  "virtual_mac": "77:88:43:8a:13:c7",
   "drivers": {
     "net": "active",
     "tor-bridge": "active",
     "firewall": "active",
     "watchdog": "active"
   },
-  "lastBoot": 1767238408738,
+  "lastBoot": 1767238599114,
   "securityEnabled": false,
   "adminPin": "2002"
 }
