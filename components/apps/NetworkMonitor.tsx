@@ -1,1 +1,0 @@
-// Escáner de malla y monitoreo de tráfico

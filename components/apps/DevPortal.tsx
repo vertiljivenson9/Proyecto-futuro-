@@ -1,1 +1,0 @@
-// Portal de monetización para desarrolladores

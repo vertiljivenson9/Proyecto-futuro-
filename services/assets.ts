@@ -1,1 +1,0 @@
-// Caché de recursos multimedia y temas

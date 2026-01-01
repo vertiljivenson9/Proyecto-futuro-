@@ -1,1 +1,0 @@
-// Editor de código con validación de checksum

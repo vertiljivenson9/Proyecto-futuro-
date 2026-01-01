@@ -1,16 +1,16 @@
 {
   "wallpaper": "/user/wallpaper.img",
   "theme": "dark",
-  "machine_id": "V-MJAWLJG4LJIZOS",
-  "current_ip": "200.88.239.107",
-  "virtual_mac": "85:1c:07:61:fa:e4",
+  "machine_id": "V-MJAXLJIYOS4YMZ",
+  "current_ip": "201.229.238.215",
+  "virtual_mac": "e0:fd:c2:18:f1:da",
   "drivers": {
     "net": "active",
     "tor-bridge": "active",
     "firewall": "active",
     "watchdog": "active"
   },
-  "lastBoot": 1767238984113,
+  "lastBoot": 1767245969856,
   "securityEnabled": false,
   "adminPin": "2002"
 }
