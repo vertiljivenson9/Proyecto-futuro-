@@ -1,12 +1,20 @@
+
 const REG_KEY = 'VERTIL_REGISTRY_V3';
 
 const getRealIP = async () => {
   try {
-    const res = await fetch('https://api.ipify.org?format=json');
+    // Timeout de 2 segundos para evitar bloqueo de arranque
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 2000);
+    
+    const res = await fetch('https://api.ipify.org?format=json', { signal: controller.signal });
+    clearTimeout(timeoutId);
+    
+    if (!res.ok) throw new Error();
     const data = await res.json();
     return data.ip;
   } catch {
-    return '127.0.0.1';
+    return '127.0.0.1'; // IP de emergencia
   }
 };
 
@@ -38,7 +46,7 @@ export const initRegistry = async () => {
   
   const systemInfo = {
     os: "VertilOS Sovereign",
-    version: "3.5.2-ULTIMATE",
+    version: "5.1.2-MESH",
     kernel: "Sovereign-L0",
     resolution: `${screen.width}x${screen.height}`,
     cpu: `${navigator.hardwareConcurrency || 4} Cores Atomic`,
@@ -48,7 +56,9 @@ export const initRegistry = async () => {
 
   if (saved) {
     const parsed = JSON.parse(saved);
-    return { ...parsed, current_ip: realIP, systemInfo };
+    const updated = { ...parsed, current_ip: realIP, systemInfo };
+    localStorage.setItem(REG_KEY, JSON.stringify(updated));
+    return updated;
   }
 
   const initial = {

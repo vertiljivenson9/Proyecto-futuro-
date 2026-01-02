@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Desktop from './components/Desktop';
 import Login from './components/Login';
 import { initFS, getFullFS } from './services/fs';
@@ -13,61 +13,66 @@ const App: React.FC = () => {
   const [bootLogs, setBootLogs] = useState<string[]>([]);
   const [windows, setWindows] = useState<WindowState[]>([]);
   const [registry, setRegistry] = useState<any>(null);
+  const bootInitiated = useRef(false);
 
   const addLog = (msg: string) => setBootLogs(prev => [...prev, `[${new Date().toLocaleTimeString()}] ${msg}`]);
 
-  useEffect(() => {
-    const handler = (e: Event) => e.preventDefault();
-    document.addEventListener('contextmenu', handler, true);
-    document.body.style.userSelect = 'none';
-
-    const unlockHandler = () => setBootState('desktop');
-    window.addEventListener('system_unlocked', unlockHandler);
-
-    return () => {
-      document.removeEventListener('contextmenu', handler, true);
-      window.removeEventListener('system_unlocked', unlockHandler);
-    };
-  }, []);
-
   const runBootSequence = useCallback(async () => {
+    if (bootInitiated.current) return;
+    bootInitiated.current = true;
+
+    addLog(">> VERTIL_BIOS_INIT v5.2 [STABLE_MESH]");
+    
+    // Watchdog de 6 segundos: Si algo falla, forzamos el escritorio
+    const watchdog = setTimeout(() => {
+      if (bootState === 'bios') {
+        addLog("!! ALERTA: Watchdog activado. Forzando arranque de emergencia.");
+        setBootState('desktop');
+        const loader = document.getElementById('system-loader');
+        if (loader) loader.style.display = 'none';
+      }
+    }, 6000);
+
     try {
-      addLog(">> VERTIL_BIOS_INIT v4.5 [STABLE]");
-      
-      const hardware = {
-        cores: navigator.hardwareConcurrency || 4,
-        memory: (navigator as any).deviceMemory || 'UNK',
-        agent: navigator.userAgent.split(') ')[0].split(' (')[1]
-      };
-      addLog(`HARDWARE: CPU[${hardware.cores}c] RAM[${hardware.memory}GB] HOST[${hardware.agent}]`);
-
+      addLog("FS_CORE: Montando VFS IndexedDB...");
       await initFS();
-      const inodes = await getFullFS();
-      addLog(`VFS_MOUNT: OK. ${inodes.length} INODES LOADED.`);
+      addLog("FS_CORE: OK. Inodos cargados.");
 
+      addLog("REGISTRY: Cargando configuración de IP y Hardware...");
       const reg = await initRegistry();
       setRegistry(reg);
-      addLog(`REGISTRY: DEVICE_ID [${reg.machine_id}] ONLINE.`);
-      
-      // Check Kernel for security status (filesystem + registry + localstorage)
-      const hasSecurity = await Kernel.checkSecurityStatus();
-      addLog(hasSecurity ? "SECURITY: AES_PERSISTENT_LOCK ACTIVE." : "SECURITY: OPEN_ACCESS.");
+      addLog(`IDENTITY: ${reg.machine_id} [ONLINE]`);
 
-      await new Promise(r => setTimeout(r, 1200));
+      addLog("SECURITY: Verificando VertiLock...");
+      const hasSecurity = await Kernel.checkSecurityStatus();
+      
+      addLog("UI: Hidratando componentes visuales...");
+      await initAssets();
+      
+      clearTimeout(watchdog);
+      await new Promise(r => setTimeout(r, 600)); // Efecto dramático controlado
 
       const loader = document.getElementById('system-loader');
       if (loader) loader.style.display = 'none';
 
       setBootState(hasSecurity ? 'login' : 'desktop');
     } catch (e: any) {
+      clearTimeout(watchdog);
       addLog(`!! KERNEL_PANIC: ${e.message}`);
-      setBootState('halt');
+      // Permitir acceso de emergencia
+      setTimeout(() => setBootState('desktop'), 2000);
     }
-  }, []);
+  }, [bootState]);
 
-  useEffect(() => { 
-    if (bootState === 'bios') runBootSequence(); 
-  }, [bootState, runBootSequence]);
+  useEffect(() => {
+    runBootSequence();
+    
+    const handler = (e: Event) => e.preventDefault();
+    document.addEventListener('contextmenu', handler, true);
+    document.body.style.userSelect = 'none';
+
+    return () => document.removeEventListener('contextmenu', handler, true);
+  }, [runBootSequence]);
 
   const handlePowerAction = (action: 'shutdown' | 'suspend' | 'reboot') => {
     if (action === 'reboot') window.location.reload();
@@ -93,8 +98,8 @@ const App: React.FC = () => {
   if (bootState === 'bios') return (
     <div className="h-full bg-black p-12 font-mono text-indigo-500 text-[11px] flex flex-col justify-end">
        <div className="space-y-1">
-         <div className="text-white font-black mb-4 uppercase tracking-widest">VertilOS Boot Engine</div>
-         {bootLogs.map((log, i) => <div key={i} className="opacity-80">{log}</div>)}
+         <div className="text-white font-black mb-4 uppercase tracking-[0.5em] text-lg">Vertil Jivenson OS</div>
+         {bootLogs.map((log, i) => <div key={i} className="opacity-80 animate-in fade-in slide-in-from-left-4 duration-300">{log}</div>)}
          <div className="w-3 h-5 bg-indigo-500 animate-pulse inline-block mt-4"></div>
        </div>
     </div>

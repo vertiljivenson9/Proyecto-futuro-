@@ -8,22 +8,26 @@ let db: IDBDatabase | null = null;
 
 export const initFS = (): Promise<void> => {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open(DB_NAME, 3);
+    try {
+      const request = indexedDB.open(DB_NAME, 3);
 
-    request.onupgradeneeded = (event) => {
-      const db = (event.target as IDBOpenDBRequest).result;
-      if (!db.objectStoreNames.contains(STORE_NAME)) {
-        db.createObjectStore(STORE_NAME, { keyPath: 'path' });
-      }
-    };
+      request.onupgradeneeded = (event) => {
+        const db = (event.target as IDBOpenDBRequest).result;
+        if (!db.objectStoreNames.contains(STORE_NAME)) {
+          db.createObjectStore(STORE_NAME, { keyPath: 'path' });
+        }
+      };
 
-    request.onsuccess = async (event) => {
-      db = (event.target as IDBOpenDBRequest).result;
-      await ensureBaseStructure();
-      resolve();
-    };
+      request.onsuccess = async (event) => {
+        db = (event.target as IDBOpenDBRequest).result;
+        await ensureBaseStructure();
+        resolve();
+      };
 
-    request.onerror = () => reject(new Error('FATAL: Filesystem access denied.'));
+      request.onerror = () => reject(new Error('FATAL: Filesystem access denied. Check private browsing settings.'));
+    } catch (e) {
+      reject(e);
+    }
   });
 };
 
@@ -59,7 +63,7 @@ const ensureBaseStructure = async () => {
     }
   }
 
-  // Wallpapers por defecto
+  // Wallpapers por defecto (Carga en segundo plano, no bloquea el arranque)
   const defaults = [
     { name: 'wp1.jpg', url: 'https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974' },
     { name: 'wp2.jpg', url: 'https://images.unsplash.com/photo-1511300636408-a63a89df3482?q=80&w=2070' },
@@ -67,27 +71,32 @@ const ensureBaseStructure = async () => {
     { name: 'wp4.jpg', url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070' }
   ];
 
+  // Hidratar archivos de sistema esenciales de forma segura
   for (const wp of defaults) {
     const path = `/system/wallpapers/${wp.name}`;
-    const exists = await getInode(path);
-    if (!exists) {
-      await saveFile(path, wp.url, 'com.vertil.kernel.assets');
-    }
+    getInode(path).then(exists => {
+      if (!exists) saveFile(path, wp.url, 'com.vertil.kernel.assets');
+    });
   }
 
   const wallpaper = await getInode('/user/wallpaper.img');
   if (!wallpaper) {
-    await saveFile('/user/wallpaper.img', defaults[0].url, 'com.vertil.user');
+    saveFile('/user/wallpaper.img', defaults[0].url, 'com.vertil.user').catch(() => {});
   }
 };
 
 export const getInode = (path: string): Promise<Inode | null> => {
   return new Promise((resolve) => {
     if (!db) return resolve(null);
-    const transaction = db.transaction(STORE_NAME, 'readonly');
-    const store = transaction.objectStore(STORE_NAME);
-    const request = store.get(path);
-    request.onsuccess = () => resolve(request.result || null);
+    try {
+      const transaction = db.transaction(STORE_NAME, 'readonly');
+      const store = transaction.objectStore(STORE_NAME);
+      const request = store.get(path);
+      request.onsuccess = () => resolve(request.result || null);
+      request.onerror = () => resolve(null);
+    } catch {
+      resolve(null);
+    }
   });
 };
 
