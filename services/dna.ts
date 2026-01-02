@@ -1,2 +1,54 @@
-// VERTILOS_MESH_FILE_V5
-// Contenido pendiente de hidratación.
+
+/**
+ * VERTILOS SYSTEM DNA MANIFEST - v5.0
+ * Define la estructura exacta para la Replicación Atómica Mesh.
+ */
+
+export const SYSTEM_FILES_MANIFEST = [
+  "index.html",
+  "index.tsx",
+  "App.tsx",
+  "types.ts",
+  "package.json",
+  "wrangler.json",
+  "metadata.json",
+  "_worker.js",
+  "_routes.json",
+  "temp_patch.js",
+  "services/kernel.ts",
+  "services/fs.ts",
+  "services/registry.ts",
+  "services/assets.ts",
+  "services/dna.ts",
+  "components/Desktop.tsx",
+  "components/Window.tsx",
+  "components/AppLauncher.tsx",
+  "components/Login.tsx",
+  "components/apps/Explorer.tsx",
+  "components/apps/PowerShell.tsx",
+  "components/apps/IDE.tsx",
+  "components/apps/GerthaStore.tsx",
+  "components/apps/Settings.tsx",
+  "components/apps/TextEditor.tsx",
+  "components/apps/MediaPlayer.tsx",
+  "components/apps/CloneSys.tsx",
+  "components/apps/Replicator.tsx",
+  "components/apps/Reggedit.tsx",
+  "components/apps/GoogleSearch.tsx",
+  "components/apps/TorBrowser.tsx",
+  "components/apps/NetworkMonitor.tsx",
+  "components/apps/Vault.tsx",
+  "components/apps/Profile.tsx",
+  "components/apps/MovieCenter.tsx",
+  "components/apps/InstructionManual.tsx",
+  "components/apps/DevPortal.tsx",
+  "components/apps/About.tsx",
+  "components/apps/Power.tsx",
+  "components/apps/KernelDocumentation.tsx"
+];
+
+export const getDNASummary = () => ({
+  count: SYSTEM_FILES_MANIFEST.length,
+  version: "5.0.0-MESH-SYNC",
+  status: "READY_FOR_ATOMIC_PUSH"
+});
