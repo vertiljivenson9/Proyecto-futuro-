@@ -1,0 +1,215 @@
+{
+  "manifest": "com.vertil.vpx_image_v2",
+  "timestamp": 1767318648783,
+  "system": {
+    "version": "2.5.0-PRO",
+    "registry": {
+      "wallpaper": "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974",
+      "theme": "dark",
+      "machine_id": "V-MJAXLJIYOS4YMZ",
+      "current_ip": "201.229.238.151",
+      "virtual_mac": "d0:de:b6:d0:c3:85",
+      "drivers": {
+        "net": "active",
+        "tor-bridge": "active",
+        "firewall": "active",
+        "watchdog": "active"
+      },
+      "lastBoot": 1767318169378,
+      "securityEnabled": false,
+      "adminPin": "2002",
+      "systemInfo": {
+        "os": "VertilOS Sovereign",
+        "version": "3.5.2-ULTIMATE",
+        "kernel": "Sovereign-L0",
+        "resolution": "414x896",
+        "cpu": "4 Cores Atomic",
+        "browser": "Mozilla/5.0",
+        "device": "Mobile Terminal"
+      }
+    },
+    "fs_inodes": [
+      {
+        "id": "13fb7d1c-2b35-45c7-8fc6-083ef8a2b06c",
+        "name": "apps",
+        "type": "directory",
+        "path": "/apps",
+        "size": 0,
+        "created": 1767318167815,
+        "modified": 1767318167815,
+        "permissions": 493,
+        "namespace": "com.vertil.apps"
+      },
+      {
+        "id": "06472582-cae4-4d65-9ab6-2d79f34dd3dc",
+        "name": "bin",
+        "type": "directory",
+        "path": "/bin",
+        "size": 0,
+        "created": 1767318167806,
+        "modified": 1767318167806,
+        "permissions": 493,
+        "namespace": "com.vertil.system"
+      },
+      {
+        "id": "09286fb9-ff91-4d3f-ad22-f5dc720168e2",
+        "name": "store",
+        "type": "directory",
+        "path": "/store",
+        "size": 0,
+        "created": 1767318167817,
+        "modified": 1767318167817,
+        "permissions": 493,
+        "namespace": "com.vertil.store"
+      },
+      {
+        "id": "59fc4515-f00c-498d-8ab3-f48f406b8977",
+        "name": "system",
+        "type": "directory",
+        "path": "/system",
+        "size": 0,
+        "created": 1767318167812,
+        "modified": 1767318167812,
+        "permissions": 493,
+        "namespace": "com.vertil.kernel"
+      },
+      {
+        "id": "ce1964d0-d96a-4786-94db-43b62fcbdcdc",
+        "name": "lock",
+        "type": "directory",
+        "path": "/system/lock",
+        "size": 0,
+        "created": 1767318167813,
+        "modified": 1767318167813,
+        "permissions": 493,
+        "namespace": "com.vertil.kernel.security"
+      },
+      {
+        "id": "1d502fbe-c7a9-499d-b205-b41661c0dd00",
+        "name": "vendor",
+        "type": "directory",
+        "path": "/system/vendor",
+        "size": 0,
+        "created": 1767318167814,
+        "modified": 1767318167814,
+        "permissions": 493,
+        "namespace": "com.vertil.kernel.vendor"
+      },
+      {
+        "id": "f8b59210-bc4b-4229-a22b-b2f0bbf1b669",
+        "name": "wallpapers",
+        "type": "directory",
+        "path": "/system/wallpapers",
+        "size": 0,
+        "created": 1767318167812,
+        "modified": 1767318167812,
+        "permissions": 493,
+        "namespace": "com.vertil.kernel.assets"
+      },
+      {
+        "id": "f2152f95-8b0a-402a-8ffc-d8a7365416af",
+        "name": "wp1.jpg",
+        "type": "file",
+        "path": "/system/wallpapers/wp1.jpg",
+        "content": "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974",
+        "size": 72,
+        "created": 1767318167819,
+        "modified": 1767318167819,
+        "permissions": 420,
+        "namespace": "com.vertil.kernel.assets"
+      },
+      {
+        "id": "408ed265-2d83-42db-9269-2f68d7597fb2",
+        "name": "wp2.jpg",
+        "type": "file",
+        "path": "/system/wallpapers/wp2.jpg",
+        "content": "https://images.unsplash.com/photo-1511300636408-a63a89df3482?q=80&w=2070",
+        "size": 72,
+        "created": 1767318167821,
+        "modified": 1767318167821,
+        "permissions": 420,
+        "namespace": "com.vertil.kernel.assets"
+      },
+      {
+        "id": "efb5f036-c0d5-4742-8327-249245d6f1c9",
+        "name": "wp3.jpg",
+        "type": "file",
+        "path": "/system/wallpapers/wp3.jpg",
+        "content": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070",
+        "size": 69,
+        "created": 1767318167822,
+        "modified": 1767318167822,
+        "permissions": 420,
+        "namespace": "com.vertil.kernel.assets"
+      },
+      {
+        "id": "bfe8fe7f-bb74-4fcb-8100-fab04100dff0",
+        "name": "wp4.jpg",
+        "type": "file",
+        "path": "/system/wallpapers/wp4.jpg",
+        "content": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070",
+        "size": 72,
+        "created": 1767318167866,
+        "modified": 1767318167866,
+        "permissions": 420,
+        "namespace": "com.vertil.kernel.assets"
+      },
+      {
+        "id": "92c8b7a8-0aa1-4995-a0aa-e7aa8aad4200",
+        "name": "user",
+        "type": "directory",
+        "path": "/user",
+        "size": 0,
+        "created": 1767318167808,
+        "modified": 1767318167808,
+        "permissions": 493,
+        "namespace": "com.vertil.user"
+      },
+      {
+        "id": "03190341-4fe6-4bd7-a38e-a9ff1f533c98",
+        "name": "apps",
+        "type": "directory",
+        "path": "/user/apps",
+        "size": 0,
+        "created": 1767318167809,
+        "modified": 1767318167809,
+        "permissions": 493,
+        "namespace": "com.vertil.user.apps"
+      },
+      {
+        "id": "c9a458c9-2c88-48c1-81e6-257999754ba4",
+        "name": "documents",
+        "type": "directory",
+        "path": "/user/documents",
+        "size": 0,
+        "created": 1767318167810,
+        "modified": 1767318167810,
+        "permissions": 493,
+        "namespace": "com.vertil.user.docs"
+      },
+      {
+        "id": "abfde2df-317f-4be3-980e-a8bb77176d67",
+        "name": "wallpaper.img",
+        "type": "file",
+        "path": "/user/wallpaper.img",
+        "content": "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974",
+        "size": 72,
+        "created": 1767318167867,
+        "modified": 1767318167867,
+        "permissions": 420,
+        "namespace": "com.vertil.user"
+      },
+      {
+        "id": "bf278337-20aa-4e6f-aedd-0401fab6aff2",
+        "name": "log",
+        "type": "directory",
+        "path": "/var/log",
+        "size": 0,
+        "created": 1767318167818,
+        "modified": 1767318167818,
+        "permissions": 493,
+        "namespace": "com.vertil.logs"
+      }
+    ]
+  }
+}
