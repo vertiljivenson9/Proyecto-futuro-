@@ -1,1 +1,2 @@
-// Código real de registry.ts...
+// VERTILOS_MESH_FILE_V5
+// Contenido pendiente de hidratación.
