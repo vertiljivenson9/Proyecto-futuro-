@@ -1,1 +1,1 @@
-export default function Power() { return null; }
+export default function Power() { return <div className='p-10'>Power Manager.</div>; }

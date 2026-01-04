@@ -1,1 +1,1 @@
-export default function Profile() { return null; }
+export default function Profile() { return <div className='p-10'>Profile Ready.</div>; }

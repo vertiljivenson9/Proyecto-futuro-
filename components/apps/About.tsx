@@ -1,1 +1,1 @@
-export default function About() { return null; }
+export default function About() { return <div className='p-10'>VertilOS v5.2</div>; }

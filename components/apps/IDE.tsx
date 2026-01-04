@@ -1,1 +1,1 @@
-export default function IDE() { return null; }
+export default function IDE() { return <div className='p-10'>IDE Ready.</div>; }

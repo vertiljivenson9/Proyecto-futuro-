@@ -1,1 +1,1 @@
-export default function GoogleSearch() { return null; }
+export default function GoogleSearch() { return <div className='p-10'>Search Ready.</div>; }

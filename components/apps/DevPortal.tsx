@@ -1,1 +1,1 @@
-export default function DevPortal() { return null; }
+export default function DevPortal() { return <div className='p-10'>Dev Ready.</div>; }

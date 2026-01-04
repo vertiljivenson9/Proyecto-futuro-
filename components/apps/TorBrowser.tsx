@@ -1,1 +1,1 @@
-export default function TorBrowser() { return null; }
+export default function TorBrowser() { return <div className='p-10'>Tor Ready.</div>; }

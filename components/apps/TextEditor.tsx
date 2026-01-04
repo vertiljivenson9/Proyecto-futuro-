@@ -1,1 +1,1 @@
-export default function TextEditor() { return null; }
+export default function TextEditor() { return <div className='p-10'>Editor Ready.</div>; }

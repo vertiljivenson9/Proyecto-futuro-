@@ -1,1 +1,1 @@
-export default function NetworkMonitor() { return null; }
+export default function NetworkMonitor() { return <div className='p-10'>Network Ready.</div>; }

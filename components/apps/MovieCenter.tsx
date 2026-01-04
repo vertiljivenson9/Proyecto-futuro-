@@ -1,1 +1,1 @@
-export default function MovieCenter() { return null; }
+export default function MovieCenter() { return <div className='p-10'>Movies Ready.</div>; }

@@ -1,1 +1,1 @@
-export default function Replicator() { return null; }
+export default function Replicator() { return <div className='p-10'>Replicator Ready.</div>; }

@@ -7,6 +7,6 @@ export default function AppLauncher({ appId }) {
     case 'explorer': return <Explorer />;
     case 'clonesys': return <CloneSys />;
     case 'powershell': return <PowerShell />;
-    default: return <div className="p-10 text-white/20 uppercase text-xs">Binary {appId} not found.</div>;
+    default: return <div className="p-10 text-white/20 uppercase text-xs">Binary Not Found.</div>;
   }
 }

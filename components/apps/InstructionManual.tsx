@@ -1,1 +1,1 @@
-export default function InstructionManual() { return null; }
+export default function InstructionManual() { return <div className='p-10'>Manual Ready.</div>; }

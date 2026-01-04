@@ -1,1 +1,1 @@
-export default function Vault() { return null; }
+export default function Vault() { return <div className='p-10'>Vault Ready.</div>; }
