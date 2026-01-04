@@ -1,1 +1,0 @@
-export default function KernelDocumentation() { return <div className='p-10'>Docs Ready.</div>; }

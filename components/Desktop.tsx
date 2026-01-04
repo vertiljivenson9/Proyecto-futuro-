@@ -1,9 +1,9 @@
 import React from 'react';
 import Window from './Window';
 export default function Desktop({ registry, windows, setWindows, onOpenWindow }) {
-  const apps = [{ id: 'explorer', title: 'Explorer', icon: 'https://cdn-icons-png.flaticon.com/512/3767/3767084.png' }, { id: 'clonesys', title: 'CloneSys', icon: 'https://cdn-icons-png.flaticon.com/512/2550/2550224.png' }];
+  const apps = [{id: 'explorer', title: 'Explorer', icon: 'https://cdn-icons-png.flaticon.com/512/3767/3767084.png'}, {id: 'clonesys', title: 'CloneSys', icon: 'https://cdn-icons-png.flaticon.com/512/2550/2550224.png'}, {id: 'settings', title: 'Settings', icon: 'https://cdn-icons-png.flaticon.com/512/3524/3524659.png'}];
   return (
-    <div className="h-full w-full relative bg-cover bg-center bg-black" style={{ backgroundImage: `url(${registry?.wallpaper})` }}>
+    <div className="h-full w-full relative bg-cover bg-center bg-black" style={{ backgroundImage: `url(${registry?.wallpaper})`, transition: 'background-image 0.8s ease' }}>
       <div className="p-10 grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-8">
         {apps.map(app => (
           <button key={app.id} onClick={() => onOpenWindow(app.id, app.title, app.icon)} className="flex flex-col items-center gap-2 group transition-all hover:scale-110">

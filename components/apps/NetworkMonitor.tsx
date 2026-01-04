@@ -1,1 +1,0 @@
-export default function NetworkMonitor() { return <div className='p-10'>Network Ready.</div>; }

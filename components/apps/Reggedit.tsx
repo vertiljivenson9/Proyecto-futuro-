@@ -1,1 +1,0 @@
-export default function Reggedit() { return <div className='p-10'>Registry Ready.</div>; }

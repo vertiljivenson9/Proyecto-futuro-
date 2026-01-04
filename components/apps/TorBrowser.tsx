@@ -1,1 +1,0 @@
-export default function TorBrowser() { return <div className='p-10'>Tor Ready.</div>; }
