@@ -6,5 +6,5 @@ const rootElement = document.getElementById('root');
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(<App />);
-  console.log("VERTIL_CORE: Root mounted.");
+  console.log("VERTIL_CORE: React mounted. Awaiting Kernel bootstrap...");
 }

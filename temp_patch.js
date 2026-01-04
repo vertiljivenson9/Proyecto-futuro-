@@ -1,0 +1,1 @@
+console.log("VERTIL_CORE: High Integrity Patch Active.");
