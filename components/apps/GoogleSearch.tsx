@@ -1,1 +1,1 @@
-export default function GoogleSearch() { return <div>Search</div>; }
+import React from 'react'; export default function GoogleSearch() { return <div className="p-10">SEARCH_ENGINE</div>; }

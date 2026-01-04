@@ -1,1 +1,1 @@
-export default function IDE() { return <div>IDE</div>; }
+import React from 'react'; export default function IDE() { return <div className="p-10 text-white">IDE_STUDIO</div>; }

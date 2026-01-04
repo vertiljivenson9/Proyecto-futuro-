@@ -1,0 +1,1 @@
+import React from 'react'; export default function AppLauncher({appId}) { return <div className="p-10">Launching {appId}...</div>; }

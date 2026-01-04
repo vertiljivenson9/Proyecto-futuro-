@@ -1,1 +1,1 @@
-export default function Reggedit() { return <div>Registry</div>; }
+import React from 'react'; export default function Reggedit() { return <div className="p-10 text-indigo-500">REGISTRY_HEX</div>; }

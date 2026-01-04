@@ -1,1 +1,3 @@
 export const initRegistry = async () => ({ machine_id: 'V-PRO-X', current_ip: '127.0.0.1', systemInfo: { os: 'VertilOS' } });
+export const updateRegistry = async (u) => {};
+export const getRegistry = async () => null;

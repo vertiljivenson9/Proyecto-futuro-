@@ -1,1 +1,1 @@
-export default function Vault() { return <div>Vault</div>; }
+import React from 'react'; export default function Vault() { return <div className="p-10">SECURE_VAULT</div>; }

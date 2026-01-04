@@ -1,1 +1,1 @@
-export default function KernelDocumentation() { return <div>Docs</div>; }
+import React from 'react'; export default function KernelDocumentation() { return <div className="p-10">KERNEL_MANIFEST</div>; }

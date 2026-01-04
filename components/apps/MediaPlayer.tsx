@@ -1,1 +1,1 @@
-export default function MediaPlayer() { return <div>Media</div>; }
+import React from 'react'; export default function MediaPlayer() { return <div className="p-10">MEDIA_DECODER</div>; }

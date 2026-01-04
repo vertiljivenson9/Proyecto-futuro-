@@ -1,1 +1,1 @@
-export default function Explorer() { return <div>Explorer</div>; }
+import React from 'react'; export default function Explorer() { return <div className="p-10 text-white">VFS_EXPLORER</div>; }

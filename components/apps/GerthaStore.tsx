@@ -1,1 +1,0 @@
-export default function GerthaStore() { return <div>Store</div>; }

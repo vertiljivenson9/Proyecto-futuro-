@@ -1,1 +1,1 @@
-export default function DevPortal() { return <div>Dev</div>; }
+import React from 'react'; export default function DevPortal() { return <div className="p-10">DEV_CENTER</div>; }

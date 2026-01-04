@@ -1,1 +1,1 @@
-export default function Settings() { return <div>Settings</div>; }
+import React from 'react'; export default function Settings() { return <div className="p-10 text-white">SYS_SETTINGS</div>; }

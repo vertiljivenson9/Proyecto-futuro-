@@ -1,1 +1,1 @@
-export default function MovieCenter() { return <div>Movies</div>; }
+import React from 'react'; export default function MovieCenter() { return <div className="p-10 text-white">CINEMA_ENGINE</div>; }

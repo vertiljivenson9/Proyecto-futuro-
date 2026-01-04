@@ -1,1 +1,1 @@
-export default function Power() { return <div>Power</div>; }
+import React from 'react'; export default function Power() { return <div className="p-10">POWER_MGMT</div>; }

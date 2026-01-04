@@ -1,1 +1,1 @@
-/* RECURSIVE DNA PORT */
+/* Recursive source placeholder */

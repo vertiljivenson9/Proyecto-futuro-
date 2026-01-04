@@ -1,1 +1,1 @@
-export default function Replicator() { return <div>Backup</div>; }
+import React from 'react'; export default function Replicator() { return <div className="p-10 text-orange-500">FS_BACKUP</div>; }
