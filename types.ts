@@ -1,1 +1,2 @@
 export interface Inode { id: string; name: string; type: string; path: string; content?: string; size: number; }
+export interface WindowState { id: string; title: string; icon: string; appId: string; x: number; y: number; width: number; height: number; zIndex: number; isMinimized: boolean; isMaximized: boolean; }
