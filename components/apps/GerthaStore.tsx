@@ -1,0 +1,1 @@
+export default function Store() { return <div className="p-10 text-white italic">Store Offline.</div>; }

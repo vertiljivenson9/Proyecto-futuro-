@@ -1,38 +1,21 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Desktop from './components/Desktop';
-import Login from './components/Login';
 import { initFS } from './services/fs';
 import { initRegistry } from './services/registry';
-import { Kernel } from './services/kernel';
-
 export default function App() {
-  const [bootState, setBootState] = useState('bios');
-  const [windows, setWindows] = useState([]);
-  const [registry, setRegistry] = useState(null);
-  const bootCalled = useRef(false);
-
+  const [boot, setBoot] = useState(false);
+  const [reg, setReg] = useState(null);
+  const [win, setWin] = useState([]);
   useEffect(() => {
-    if (bootCalled.current) return;
-    bootCalled.current = true;
-    const boot = async () => {
-      const timeout = setTimeout(() => { setBootState('desktop'); document.getElementById('system-loader').style.display='none'; }, 4000);
-      try {
-        await initFS();
-        const reg = await initRegistry();
-        setRegistry(reg);
-        const hasSec = await Kernel.checkSecurityStatus();
-        clearTimeout(timeout);
-        if(document.getElementById('system-loader')) document.getElementById('system-loader').style.display='none';
-        setBootState(hasSec ? 'login' : 'desktop');
-      } catch (e) { setBootState('desktop'); }
+    const start = async () => {
+      await initFS();
+      const r = await initRegistry();
+      setReg(r);
+      setBoot(true);
+      if(document.getElementById('system-loader')) document.getElementById('system-loader').style.display='none';
     };
-    boot();
+    start();
   }, []);
-
-  const openWindow = (appId, title, icon) => {
-    setWindows(prev => [...prev, { id: crypto.randomUUID(), title, icon, appId, isOpen: true, zIndex: 100, x: 50, y: 50, width: 900, height: 600 }]);
-  };
-
-  if (bootState === 'bios') return null;
-  return <Desktop registry={registry} windows={windows} setWindows={setWindows} onOpenWindow={openWindow} />;
+  if(!boot) return null;
+  return <Desktop registry={reg} windows={win} setWindows={setWin} onOpenWindow={(id,t,ic) => setWin(p=>[...p,{id:crypto.randomUUID(),appId:id,title:t,icon:ic,x:50,y:50,width:900,height:600,zIndex:100}])} />;
 }

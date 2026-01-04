@@ -1,0 +1,1 @@
+export default function Profile() { return <div className="p-10 text-white">Identity L0</div>; }

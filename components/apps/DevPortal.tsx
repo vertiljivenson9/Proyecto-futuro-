@@ -1,0 +1,1 @@
+export default function Dev() { return <div className="p-10 text-white">Dev Area</div>; }

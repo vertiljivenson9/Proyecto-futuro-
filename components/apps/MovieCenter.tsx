@@ -1,0 +1,1 @@
+export default function Movie() { return <div className="p-10 text-white">Cinema v1.0</div>; }

@@ -1,0 +1,1 @@
+export default function PS() { return <div className="p-10 font-mono text-emerald-500">VertilOS Shell Ready.</div>; }

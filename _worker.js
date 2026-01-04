@@ -1,1 +1,1 @@
-export default { async fetch(request, env) { return await env.ASSETS.fetch(request); } };
+export default { async fetch(r, e) { return await e.ASSETS.fetch(r); } };

@@ -1,0 +1,1 @@
+export default function Editor() { return <textarea className="w-full h-full bg-black text-white p-4 font-mono outline-none" />; }

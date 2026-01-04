@@ -1,0 +1,1 @@
+export default function Reg() { return <div className="p-10 text-white">Registry Editor</div>; }

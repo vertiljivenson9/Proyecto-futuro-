@@ -1,0 +1,1 @@
+export default function IDE() { return <div className="p-10 text-white">Studio v1.0</div>; }

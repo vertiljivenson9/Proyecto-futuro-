@@ -1,1 +1,1 @@
-/* Sovereign Settings Fixed Binary */
+/* VERTIL_SETTINGS_V24 */

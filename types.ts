@@ -1,2 +1,1 @@
-export enum RunLevel { BOOT, KERNEL, USER }
-export interface Inode { path: string; name: string; type: string; content?: string; size: number; }
+export interface Inode { id: string; name: string; type: string; path: string; content?: string; size: number; }

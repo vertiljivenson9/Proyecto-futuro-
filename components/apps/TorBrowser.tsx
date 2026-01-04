@@ -1,0 +1,1 @@
+export default function Tor() { return <div className="p-10 text-purple-500 font-black">TOR_READY</div>; }

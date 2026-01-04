@@ -1,0 +1,1 @@
+export default function Manual() { return <div className="p-10 text-white italic">Documentation.</div>; }
