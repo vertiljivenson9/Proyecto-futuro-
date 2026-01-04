@@ -1,1 +1,1 @@
-console.log("VERTIL_CORE: Patch Active.");
+console.log("Kernel Patch Active.");

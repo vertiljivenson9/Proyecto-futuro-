@@ -1,1 +1,1 @@
-/* Self-replicating Binary */
+/* Sovereign Replicator DNA */

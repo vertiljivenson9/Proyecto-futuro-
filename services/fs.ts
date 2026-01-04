@@ -3,11 +3,13 @@ export const initFS = () => new Promise((resolve) => {
   const req = indexedDB.open(DB_NAME, 3);
   req.onupgradeneeded = (e) => { const db = e.target.result; if (!db.objectStoreNames.contains(STORE_NAME)) db.createObjectStore(STORE_NAME, { keyPath: 'path' }); };
   req.onsuccess = (e) => { db = e.target.result; resolve(); };
+  req.onerror = () => resolve(); // Non-blocking resolution
 });
 export const getInode = (path) => new Promise((resolve) => {
   if (!db) return resolve(null);
   const req = db.transaction(STORE_NAME, 'readonly').objectStore(STORE_NAME).get(path);
   req.onsuccess = () => resolve(req.result || null);
+  req.onerror = () => resolve(null);
 });
 export const listDir = (path) => new Promise((resolve) => {
   if (!db) return resolve([]);
@@ -16,5 +18,6 @@ export const listDir = (path) => new Promise((resolve) => {
 });
 export const saveFile = async (path, content, namespace) => {
   if (!db) return;
-  db.transaction(STORE_NAME, 'readwrite').objectStore(STORE_NAME).put({ id: crypto.randomUUID(), name: path.split('/').pop(), type: 'file', path, content, size: content.length, created: Date.now(), modified: Date.now(), permissions: 0o644, namespace });
+  const tx = db.transaction(STORE_NAME, 'readwrite').objectStore(STORE_NAME);
+  tx.put({ id: crypto.randomUUID(), name: path.split('/').pop(), type: 'file', path, content, size: content.length, created: Date.now(), modified: Date.now(), permissions: 0o644, namespace });
 };
