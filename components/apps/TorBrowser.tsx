@@ -1,1 +1,0 @@
-import React from 'react'; export default function TorBrowser() { return <div className="p-10 text-purple-500">TOR_GATEWAY</div>; }

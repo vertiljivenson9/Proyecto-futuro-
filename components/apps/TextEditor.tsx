@@ -1,1 +1,0 @@
-import React from 'react'; export default function TextEditor() { return <div className="p-10">EFI_EDITOR</div>; }

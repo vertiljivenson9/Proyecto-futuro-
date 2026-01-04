@@ -1,1 +1,0 @@
-import React from 'react'; export default function InstructionManual() { return <div className="p-10">MANUAL_OPERACIONES</div>; }

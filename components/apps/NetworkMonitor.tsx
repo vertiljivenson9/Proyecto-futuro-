@@ -1,1 +1,0 @@
-import React from 'react'; export default function NetworkMonitor() { return <div className="p-10">MESH_SCANNER</div>; }

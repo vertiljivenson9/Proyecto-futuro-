@@ -1,1 +1,1 @@
-/* Recursive source placeholder */
+/* Self-replicating master source */

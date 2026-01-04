@@ -1,1 +1,0 @@
-import React from 'react'; export default function PowerShell() { return <div className="p-10 text-emerald-500 font-mono">root@vertilos#</div>; }

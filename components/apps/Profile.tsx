@@ -1,1 +1,0 @@
-import React from 'react'; export default function Profile() { return <div className="p-10 text-center">ADMIN_L0</div>; }
