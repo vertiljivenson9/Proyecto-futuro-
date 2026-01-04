@@ -1,18 +1,11 @@
 import { getInode, listDir } from './fs';
 const CORE_SECURITY_KEY = "VERTIL_SYSTEM_CORE_KEY_99";
-const VTL_SIGNATURE = "VERTILOCK-V1-SIG";
-async function validateBinary(content: string) {
-  const forbidden = ["<script", "localStorage.clear", "document.cookie"];
-  for (const p of forbidden) if (content.toLowerCase().includes(p)) return { safe: false, reason: "Malicious pattern" };
-  return { safe: true };
-}
 export const Kernel = {
   exec: async (command, args, currentDir) => {
-    const cmd = command.toLowerCase();
-    if (cmd === 'ls') { const items = await listDir(currentDir); return { output: items.map(i => i.name).join('\n') }; }
+    if (command === 'ls') { const items = await listDir(currentDir); return { output: items.map(i => i.name).join('\n') }; }
     return { output: 'Command not found.' };
   },
-  validateBinary,
+  validateBinary: async (content) => ({ safe: !content.includes("<script") }),
   checkSecurityStatus: async () => true,
   verifyPin: async (pin) => pin === "2002"
 };
