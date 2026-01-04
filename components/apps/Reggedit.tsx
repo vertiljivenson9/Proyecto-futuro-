@@ -1,1 +1,1 @@
-export default function Reggedit() { return <div>Registry Hex</div>; }
+export default function Reggedit() { return <div>Registry</div>; }

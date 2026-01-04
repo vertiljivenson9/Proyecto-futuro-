@@ -1,1 +1,1 @@
-export default function GerthaStore() { return <div>Gertha Market</div>; }
+export default function GerthaStore() { return <div>Store</div>; }

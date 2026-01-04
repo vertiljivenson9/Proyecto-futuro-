@@ -1,1 +1,1 @@
-export default function Settings() { return <div>System Settings</div>; }
+export default function Settings() { return <div>Settings</div>; }

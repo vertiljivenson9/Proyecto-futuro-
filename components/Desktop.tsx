@@ -1,1 +1,1 @@
-import React from 'react'; export default function Desktop() { return <div className="desktop">VertilOS Desktop</div>; }
+export default function Desktop() { return <div>Desktop</div>; }

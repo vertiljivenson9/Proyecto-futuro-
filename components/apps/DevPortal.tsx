@@ -1,1 +1,1 @@
-export default function DevPortal() { return <div>Dev Center</div>; }
+export default function DevPortal() { return <div>Dev</div>; }

@@ -1,1 +1,1 @@
-export default function Explorer() { return <div>Explorer App</div>; }
+export default function Explorer() { return <div>Explorer</div>; }

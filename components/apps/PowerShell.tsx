@@ -1,1 +1,1 @@
-export default function PowerShell() { return <div>PowerShell Core</div>; }
+export default function PowerShell() { return <div>Shell</div>; }

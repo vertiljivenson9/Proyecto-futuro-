@@ -1,1 +1,1 @@
-export default function Profile() { return <div>User Identity</div>; }
+export default function Profile() { return <div>Profile</div>; }

@@ -1,1 +1,0 @@
-import React from 'react'; export default function AppLauncher({appId}) { return <div>Launching {appId}</div>; }

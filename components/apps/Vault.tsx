@@ -1,1 +1,1 @@
-export default function Vault() { return <div>AES Vault</div>; }
+export default function Vault() { return <div>Vault</div>; }

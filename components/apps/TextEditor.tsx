@@ -1,1 +1,1 @@
-export default function TextEditor() { return <div>EFI Editor</div>; }
+export default function TextEditor() { return <div>Editor</div>; }

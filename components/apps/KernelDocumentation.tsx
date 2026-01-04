@@ -1,1 +1,1 @@
-export default function KernelDocumentation() { return <div>Technical Manifesto</div>; }
+export default function KernelDocumentation() { return <div>Docs</div>; }

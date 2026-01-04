@@ -1,1 +1,1 @@
-export const initRegistry = async () => { return { machine_id: 'V-PRO-99', current_ip: '127.0.0.1' }; };
+export const initRegistry = async () => ({ machine_id: 'V-PRO-X', current_ip: '127.0.0.1', systemInfo: { os: 'VertilOS' } });

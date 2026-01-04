@@ -1,1 +1,1 @@
-export default function IDE() { return <div>Studio IDE</div>; }
+export default function IDE() { return <div>IDE</div>; }

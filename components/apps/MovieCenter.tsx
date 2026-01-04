@@ -1,1 +1,1 @@
-export default function MovieCenter() { return <div>Cinema Engine</div>; }
+export default function MovieCenter() { return <div>Movies</div>; }

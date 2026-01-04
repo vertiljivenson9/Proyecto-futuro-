@@ -1,1 +1,1 @@
-export default function Replicator() { return <div>Cloud Backup</div>; }
+export default function Replicator() { return <div>Backup</div>; }

@@ -1,1 +1,1 @@
-export const initFS = async () => { /* IndexedDB Setup */ }; export const saveFile = async (path, content) => { /* I/O Save */ };
+export const initFS = async () => {}; export const getInode = async (path) => null; export const saveFile = async (path, content, namespace) => {}; export const listDir = async (path) => [];

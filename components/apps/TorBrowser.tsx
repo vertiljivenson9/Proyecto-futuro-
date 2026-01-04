@@ -1,1 +1,1 @@
-export default function TorBrowser() { return <div>Tor Tunnel</div>; }
+export default function TorBrowser() { return <div>Tor</div>; }

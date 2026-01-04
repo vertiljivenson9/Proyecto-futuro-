@@ -1,1 +1,1 @@
-export default function MediaPlayer() { return <div>Native Media</div>; }
+export default function MediaPlayer() { return <div>Media</div>; }

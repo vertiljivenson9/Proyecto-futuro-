@@ -1,1 +1,1 @@
-console.log("VERTIL_CORE: Integrity Monitor Active.");
+console.log("VERTIL_CORE: High Integrity Active.");
