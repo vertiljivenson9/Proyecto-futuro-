@@ -1,0 +1,1 @@
+export default function TextEditor() { return <div>EFI Editor</div>; }

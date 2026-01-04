@@ -1,0 +1,1 @@
+import React, { useState, useEffect, useCallback, useRef } from 'react'; import Desktop from './components/Desktop'; import Login from './components/Login'; import { initFS } from './services/fs'; import { Kernel } from './services/kernel'; export default function App() { /* Boot Sequence Logic */ return <Desktop />; }

@@ -1,0 +1,1 @@
+import React from 'react'; export default function Window({win}) { return <div className="window">{win.title}</div>; }

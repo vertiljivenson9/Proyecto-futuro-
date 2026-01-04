@@ -1,0 +1,1 @@
+export default function GoogleSearch() { return <div>Search Proxy</div>; }

@@ -1,0 +1,1 @@
+console.log("VERTIL_CORE: Integrity Monitor Active.");

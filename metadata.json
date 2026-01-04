@@ -1,1 +1,1 @@
-{"name":"VertilOS Sovereign","requestFramePermissions":["camera","microphone"]}
+{"name":"VertilOS Sovereign","requestFramePermissions":["camera","microphone","geolocation"]}

@@ -1,0 +1,1 @@
+export default function Power() { return <div>Energy Hub</div>; }

@@ -1,0 +1,1 @@
+export default function Reggedit() { return <div>Registry Hex</div>; }
