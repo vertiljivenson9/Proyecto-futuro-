@@ -1,1 +1,1 @@
-console.log("VERTIL_CORE: High Integrity Patch Active.");
+console.log("VERTIL_CORE: Patch Active.");
