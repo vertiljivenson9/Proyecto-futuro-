@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Replicator</div>;
+import React from 'react'; export default () => <div className="p-10 text-white">Replicator</div>;

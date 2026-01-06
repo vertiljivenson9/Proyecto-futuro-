@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Terminal</div>;
+import React from 'react'; export default () => <div className="bg-black text-emerald-500 p-6 font-mono h-full">Shell Ready.</div>;

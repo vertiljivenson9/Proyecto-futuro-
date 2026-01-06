@@ -1,1 +1,2 @@
-export interface Inode { id: string; name: string; type: 'file'|'directory'; path: string; }
+export interface Inode { id: string; name: string; type: 'file' | 'directory' | 'app' | 'link'; path: string; content?: string; size: number; created: number; modified: number; permissions: number; namespace: string; }
+export interface WindowState { id: string; title: string; icon: string; isOpen: boolean; isMinimized: boolean; isMaximized: boolean; zIndex: number; appId: string; x: number; y: number; width: number | string; height: number | string; initialPath?: string; }

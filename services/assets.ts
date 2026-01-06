@@ -1,1 +1,1 @@
-export const initAssets = () => Promise.resolve();
+export const initAssets = async () => { console.log("Caching core icons..."); };

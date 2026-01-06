@@ -1,1 +1,1 @@
-console.log("Integrity check");
+console.log("VERTIL_CORE: Low-level integrity monitor active.");

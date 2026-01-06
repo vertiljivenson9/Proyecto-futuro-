@@ -1,1 +1,1 @@
-import React from 'react'; export default ({ onUnlock }) => <div>Login Screen</div>;
+import React from 'react'; export default () => <div className="fixed inset-0 bg-black flex items-center justify-center">Login Protocol Active</div>;
