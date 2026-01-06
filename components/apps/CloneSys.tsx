@@ -1,1 +1,1 @@
-/* Sovereign Master Nucleus Nucleus */
+/* VertilOS Nuclear Base v28.5 - Integrated Replication Core */

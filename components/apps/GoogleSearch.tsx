@@ -1,1 +1,1 @@
-export default function Search() { return <iframe src="https://www.google.com/search?igu=1" className="w-full h-full border-none" />; }
+export default function GoogleSearch() { return <div>Search</div>; }

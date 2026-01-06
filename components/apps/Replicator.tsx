@@ -1,1 +1,1 @@
-export default function Rep() { return <div className="p-10 text-white">Backup v1.0</div>; }
+export default function Replicator() { return <div>Replicator</div>; }

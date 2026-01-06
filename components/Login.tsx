@@ -1,1 +1,1 @@
-export default function Login() { return null; }
+export default function Login() { return <div>Login</div>; }

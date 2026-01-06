@@ -1,1 +1,1 @@
-export const initAssets = async () => console.log('Assets Ready');
+export const initAssets = async () => {};

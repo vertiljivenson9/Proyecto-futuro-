@@ -1,1 +1,1 @@
-export default function Media() { return <div className="p-10 text-white">Media v1.0</div>; }
+export default function MediaPlayer() { return <div>Media</div>; }

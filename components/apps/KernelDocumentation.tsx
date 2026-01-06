@@ -1,1 +1,1 @@
-export default function KDocs() { return <div className="p-10 text-white">Kernel Manifest v12.0</div>; }
+export default function KernelDocumentation() { return <div>Docs</div>; }

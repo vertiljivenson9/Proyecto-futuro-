@@ -1,1 +1,1 @@
-export default function Net() { return <div className="p-10 text-indigo-400">Mesh Active</div>; }
+export default function NetworkMonitor() { return <div>Network</div>; }

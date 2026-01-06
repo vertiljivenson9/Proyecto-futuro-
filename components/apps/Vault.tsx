@@ -1,1 +1,1 @@
-export default function Vault() { return <div className="p-10 text-white">Vault Encrypted</div>; }
+export default function Vault() { return <div>Vault</div>; }

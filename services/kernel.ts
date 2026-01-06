@@ -1,1 +1,1 @@
-export const Kernel = { checkSecurityStatus: async()=>false, verifyPin: async()=>true, exec: async()=>({output:'Done.'}) };
+export const Kernel = { exec: async () => ({ output: "Done." }), verifyPin: async (p) => p === "2002" };

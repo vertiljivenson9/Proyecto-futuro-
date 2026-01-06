@@ -1,3 +1,1 @@
-export const initRegistry = async () => { const i = { wallpaper: 'https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974', current_ip: '127.0.0.1' }; localStorage.setItem('VERTIL_REG_V3', JSON.stringify(i)); return i; };
-export const getRegistry = async () => JSON.parse(localStorage.getItem('VERTIL_REG_V3') || '{}');
-export const updateRegistry = async (u) => { const c = await getRegistry(); const n = {...c, ...u}; localStorage.setItem('VERTIL_REG_V3', JSON.stringify(n)); return n; };
+export const initRegistry = async () => ({ wallpaper: "" });
