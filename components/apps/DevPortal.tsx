@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>DevPortal</div>;
+export default () => <div className="p-10 text-white">Developer Mesh</div>;

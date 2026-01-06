@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Settings</div>;
+export default () => <div className="p-10 text-white">Control Panel</div>;

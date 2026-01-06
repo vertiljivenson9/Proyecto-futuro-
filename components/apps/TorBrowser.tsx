@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>TorBrowser</div>;
+export default () => <div className="p-10 text-purple-500">Tor Gateway</div>;

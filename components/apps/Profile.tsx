@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Profile</div>;
+export default () => <div className="p-10 text-white">User Identity</div>;

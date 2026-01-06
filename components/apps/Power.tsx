@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Power</div>;
+export default () => <div className="p-10 text-red-500">Power Management</div>;

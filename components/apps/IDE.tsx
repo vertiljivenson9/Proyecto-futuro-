@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Studio</div>;
+export default () => <div className="p-10 text-white">Studio IDE Ready</div>;

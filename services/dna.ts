@@ -1,1 +1,1 @@
-export const SYSTEM_FILES_MANIFEST = [ "App.tsx", "services/kernel.ts", "components/apps/VertiJEdge.tsx", "components/apps/CloneSys.tsx", "components/Login.tsx" ];
+export const SYSTEM_FILES_MANIFEST=["index.html","index.tsx","App.tsx","services/kernel.ts","services/fs.ts","dna.ts"];

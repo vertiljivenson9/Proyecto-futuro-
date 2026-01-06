@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>RegEdit</div>;
+export default () => <div className="p-10 text-indigo-500">RegEdit Process</div>;

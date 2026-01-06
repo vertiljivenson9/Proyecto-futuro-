@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Player</div>;
+export default () => <div className="p-10 text-white">Native Player</div>;

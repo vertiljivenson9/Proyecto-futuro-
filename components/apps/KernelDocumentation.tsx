@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Docs</div>;
+export default () => <div className="p-10 text-white">Docs v1.0</div>;

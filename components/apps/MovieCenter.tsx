@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>VertiFlix</div>;
+export default () => <div className="p-10 text-red-500">VertiFlix Native</div>;

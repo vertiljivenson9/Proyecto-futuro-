@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Network</div>;
+export default () => <div className="p-10 text-white">Network Mesh</div>;

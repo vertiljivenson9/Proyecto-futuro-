@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Explorer</div>;
+import React,{useState,useEffect} from 'react';import {listDir} from '../../services/fs';const Explorer=()=>{const [items,setItems]=useState([]);useEffect(()=>{listDir('/').then(setItems);},[]);return <div className="p-6 grid grid-cols-4 gap-6">{items.map(i=><div key={i.path} className="flex flex-col items-center gap-2"><div className="text-4xl">📁</div><span className="text-[10px] text-white/60">{i.path}</span></div>)}</div>;};export default Explorer;

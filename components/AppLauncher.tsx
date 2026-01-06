@@ -1,1 +1,1 @@
-import VertiJEdge from './apps/VertiJEdge'; export default ({ appId }) => appId === 'vertijedge' ? <VertiJEdge /> : null;
+import React from 'react';import Explorer from './apps/Explorer';import CloneSys from './apps/CloneSys';import VertiJEdge from './apps/VertiJEdge';const AppLauncher=({appId})=>{switch(appId){case 'explorer':return <Explorer/>;case 'clonesys':return <CloneSys/>;case 'vertijedge':return <VertiJEdge/>;default:return <div className="p-10 text-white">App {appId} not found</div>;}};export default AppLauncher;

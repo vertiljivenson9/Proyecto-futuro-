@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Editor</div>;
+export default () => <div className="p-10 text-white">EFI Editor</div>;

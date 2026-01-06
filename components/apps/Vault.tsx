@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Vault</div>;
+export default () => <div className="p-10 text-white">Secure Vault</div>;

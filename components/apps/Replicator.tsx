@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div>Replicator</div>;
+export default () => <div className="p-10 text-orange-500">System Replicator</div>;
