@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div className="p-10 text-white">Manual</div>;
+import React from 'react'; export default () => <div>Manual</div>;

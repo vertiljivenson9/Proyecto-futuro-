@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div className="p-10 text-white">VertiFlix</div>;
+import React from 'react'; export default () => <div>VertiFlix</div>;

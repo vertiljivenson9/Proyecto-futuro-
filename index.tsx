@@ -1,10 +1,1 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-
-const rootElement = document.getElementById('root');
-if (rootElement) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(<App />);
-  console.log("VERTIL_CORE: React mounted. Awaiting Kernel bootstrap...");
-}
+import React from 'react';import ReactDOM from 'react-dom/client';import App from './App';ReactDOM.createRoot(document.getElementById('root')).render(<App />);

@@ -1,1 +1,1 @@
-import React from 'react'; export default () => <div className="p-10 text-white">DevPortal</div>;
+import React from 'react'; export default () => <div>DevPortal</div>;
