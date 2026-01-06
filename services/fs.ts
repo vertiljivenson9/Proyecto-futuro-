@@ -1,1 +1,1 @@
-export const initFS = () => new Promise(r => r());
+export const initFS = () => Promise.resolve(); export const listDir = () => Promise.resolve([]); export const saveFile = () => Promise.resolve();

@@ -1,1 +1,1 @@
-export default function Login() { return <div>Login</div>; }
+import React from 'react'; export default ({ onUnlock }) => <div>Login Screen</div>;

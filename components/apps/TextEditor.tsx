@@ -1,1 +1,1 @@
-export default function TextEditor() { return <div>Editor</div>; }
+import React from 'react'; export default () => <div>Editor</div>;

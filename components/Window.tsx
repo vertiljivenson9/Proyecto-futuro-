@@ -1,1 +1,1 @@
-export default function Window() { return <div>Window</div>; }
+import React from 'react'; export default ({ children }) => <div className="border border-white/10">{children}</div>;

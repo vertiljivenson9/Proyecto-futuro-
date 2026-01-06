@@ -1,1 +1,1 @@
-export default function AppLauncher() { return <div>App</div>; }
+import VertiJEdge from './apps/VertiJEdge'; export default ({ appId }) => appId === 'vertijedge' ? <VertiJEdge /> : null;

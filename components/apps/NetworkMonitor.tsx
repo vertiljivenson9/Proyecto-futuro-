@@ -1,1 +1,1 @@
-export default function NetworkMonitor() { return <div>Network</div>; }
+import React from 'react'; export default () => <div>Network</div>;

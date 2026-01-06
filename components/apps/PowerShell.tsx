@@ -1,1 +1,1 @@
-export default function PowerShell() { return <div>Shell</div>; }
+import React from 'react'; export default () => <div>Terminal</div>;

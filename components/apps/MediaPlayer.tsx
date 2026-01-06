@@ -1,1 +1,1 @@
-export default function MediaPlayer() { return <div>Media</div>; }
+import React from 'react'; export default () => <div>MediaPlayer</div>;

@@ -1,1 +1,1 @@
-export default function IDE() { return <div>IDE</div>; }
+import React from 'react'; export default () => <div>Studio</div>;

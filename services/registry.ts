@@ -1,1 +1,1 @@
-export const initRegistry = async () => ({ wallpaper: "" });
+export const getRegistry = () => JSON.parse(localStorage.getItem('VERTIL_REGISTRY_V3') || '{}');

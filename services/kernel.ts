@@ -1,1 +1,6 @@
-export const Kernel = { exec: async () => ({ output: "Done." }), verifyPin: async (p) => p === "2002" };
+import { getRegistry } from './registry';
+export const Kernel = {
+  checkSecurityStatus: async () => (await getRegistry())?.securityEnabled === true,
+  verifyPin: async (pin: string) => (await getRegistry())?.adminPin === pin,
+  verifyKeyFile: async (content: string) => content.includes("VERTILOCK-V1-SIG")
+};

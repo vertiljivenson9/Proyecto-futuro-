@@ -1,1 +1,1 @@
-/* VertilOS Nuclear Base v28.5 - Integrated Replication Core */
+/* VertilOS Nuclear Base v30.0 - Replicador de Código Real */

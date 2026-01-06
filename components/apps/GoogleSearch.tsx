@@ -1,1 +1,0 @@
-export default function GoogleSearch() { return <div>Search</div>; }

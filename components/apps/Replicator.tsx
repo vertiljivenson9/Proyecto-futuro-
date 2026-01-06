@@ -1,1 +1,1 @@
-export default function Replicator() { return <div>Replicator</div>; }
+import React from 'react'; export default () => <div>Replicator</div>;

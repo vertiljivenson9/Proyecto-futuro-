@@ -1,1 +1,1 @@
-export const initAssets = async () => {};
+export const initAssets = () => Promise.resolve();

@@ -1,1 +1,1 @@
-export default function TorBrowser() { return <div>Tor</div>; }
+import React from 'react'; export default () => <div>TorBrowser</div>;

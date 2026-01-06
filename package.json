@@ -1,1 +1,1 @@
-{"name":"vertilos-sovereign","version":"5.2.0","scripts":{"build":"npx esbuild index.tsx --bundle --outfile=bundle.js --format=esm --jsx=automatic --minify --loader:.ts=ts --loader:.tsx=tsx"}}
+{ "name": "vertilos", "version": "30.0.0" }

@@ -1,1 +1,1 @@
-export default function InstructionManual() { return <div>Manual</div>; }
+import React from 'react'; export default () => <div>Manual</div>;

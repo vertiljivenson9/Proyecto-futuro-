@@ -1,1 +1,1 @@
-export default function DevPortal() { return <div>Portal</div>; }
+import React from 'react'; export default () => <div>DevPortal</div>;

@@ -1,1 +1,1 @@
-export default function Reggedit() { return <div>RegEdit</div>; }
+import React from 'react'; export default () => <div>RegEdit</div>;

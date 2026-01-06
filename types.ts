@@ -1,1 +1,1 @@
-export interface Inode { id: string; name: string; type: 'file' | 'directory'; path: string; content?: string; size: number; namespace: string; }
+export interface Inode { id: string; name: string; type: 'file'|'directory'; path: string; }

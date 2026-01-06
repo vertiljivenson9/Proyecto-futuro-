@@ -1,1 +1,1 @@
-export default function Vault() { return <div>Vault</div>; }
+import React from 'react'; export default () => <div>Vault</div>;

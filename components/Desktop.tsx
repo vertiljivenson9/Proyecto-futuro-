@@ -1,1 +1,1 @@
-export default function Desktop() { return <div>Desktop</div>; }
+import React from 'react'; export default ({ registry }) => <div className="h-full bg-slate-900 text-white">Desktop of {registry?.machine_id}</div>;
