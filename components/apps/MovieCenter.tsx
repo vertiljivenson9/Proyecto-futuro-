@@ -1,0 +1,1 @@
+export default function MovieCenter() { return <div>MovieCenter</div>; }

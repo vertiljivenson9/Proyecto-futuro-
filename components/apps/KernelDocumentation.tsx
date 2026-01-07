@@ -1,0 +1,1 @@
+export default function KernelDocumentation() { return <div>KernelDocs</div>; }

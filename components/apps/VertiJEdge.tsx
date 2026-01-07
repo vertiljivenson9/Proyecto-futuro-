@@ -1,0 +1,1 @@
+export default function VertiJEdge() { return <div>VertiJEdge</div>; }

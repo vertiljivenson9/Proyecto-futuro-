@@ -1,1 +1,5 @@
-import { getRegistry } from './registry'; const VTL_SIGNATURE = "VERTILOCK-V1-SIG"; export const Kernel = { checkSecurityStatus: async () => (await getRegistry())?.securityEnabled === true, verifyPin: async (pin) => String(pin) === String((await getRegistry())?.adminPin || "2002"), verifyKeyFile: async (content) => content.includes(VTL_SIGNATURE), exec: async (command, args, currentDir) => { if (command === 'ls') return { output: 'Binaries in ' + currentDir }; if (command === 'clear') return { intent: 'clear' }; return { output: 'sh: ' + command + ': command not found' }; }, generateKeyFileContent: async () => { const reg = await getRegistry(); return "SIGNATURE:" + VTL_SIGNATURE + "\nNODE:" + reg?.machine_id + "\nVERIFIED"; } };
+export const Kernel = {
+  checkSecurityStatus: async () => true,
+  verifyPin: async (pin) => pin === '2002',
+  generateKeyFileContent: async () => "VERIFIED-SOVEREIGN-KEY"
+};

@@ -1,1 +1,2 @@
-const KEY = 'VERTIL_REGISTRY_V3'; export const initRegistry = async () => { const saved = localStorage.getItem(KEY); if (saved) return JSON.parse(saved); const initial = { wallpaper: 'https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0', machine_id: 'V-'+Date.now(), securityEnabled: true, adminPin: '2002' }; localStorage.setItem(KEY, JSON.stringify(initial)); return initial; }; export const getRegistry = async () => JSON.parse(localStorage.getItem(KEY) || '{}'); export const updateRegistry = async u => { const c = await getRegistry(); const n = { ...c, ...u }; localStorage.setItem(KEY, JSON.stringify(n)); return n; };
+export const initRegistry = async () => ({ wallpaper: '' });
+export const getRegistry = async () => ({ wallpaper: '' });

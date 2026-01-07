@@ -1,0 +1,1 @@
+export default function Replicator() { return <div>Replicator</div>; }

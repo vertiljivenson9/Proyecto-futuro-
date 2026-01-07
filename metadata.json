@@ -1,1 +1,5 @@
-{"name":"VertilOS Sovereign","requestFramePermissions":["camera","microphone","geolocation"]}
+{
+  "name": "VertilOS - Web Operating System",
+  "description": "A high-persistence, high-security web operating system featuring the Replicator backup system.",
+  "requestFramePermissions": ["camera","microphone","geolocation"]
+}

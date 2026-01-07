@@ -1,0 +1,1 @@
+export default function MediaPlayer() { return <div>MediaPlayer</div>; }

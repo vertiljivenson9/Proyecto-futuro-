@@ -1,0 +1,2 @@
+export enum RunLevel { BOOT = 0, KERNEL = 1, DRIVERS = 2, USER = 3, HALT = 4 }
+export interface Inode { id: string; name: string; type: 'file' | 'directory' | 'app' | 'link'; path: string; content?: string; size: number; created: number; modified: number; permissions: number; icon?: string; namespace: string; checksum?: string; }
