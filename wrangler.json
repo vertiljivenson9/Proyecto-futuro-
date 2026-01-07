@@ -1,6 +1,5 @@
 {
   "name": "vertil-2934",
-  "main": "_worker.js",
   "pages_build_output_dir": ".",
   "compatibility_date": "2025-01-01"
 }
