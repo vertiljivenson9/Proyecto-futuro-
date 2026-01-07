@@ -1,1 +1,0 @@
-export default () => <div className="p-10 text-indigo-500">RegEdit Process</div>;

@@ -1,1 +1,0 @@
-export default { fetch: (r, e) => e.ASSETS.fetch(r) };

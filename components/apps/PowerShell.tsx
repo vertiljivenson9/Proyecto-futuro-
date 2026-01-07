@@ -1,1 +1,0 @@
-export default () => <div className="p-10 text-emerald-500 font-mono">Terminal v1.0 Ready</div>;

@@ -1,1 +1,0 @@
-export default () => <div className="p-10 text-orange-500">System Replicator</div>;

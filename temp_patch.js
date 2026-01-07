@@ -1,1 +1,1 @@
-console.log("Integrity active.");
+console.log("VERTIL_CORE: Integrity active.");

@@ -1,1 +1,0 @@
-export const SYSTEM_FILES_MANIFEST=["index.html","index.tsx","App.tsx","services/kernel.ts","services/fs.ts","dna.ts"];

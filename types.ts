@@ -1,1 +1,0 @@
-export interface Inode{path:string;content:string;type:'file'|'directory';size:number;namespace:string;}

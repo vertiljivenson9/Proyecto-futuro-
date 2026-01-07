@@ -1,1 +1,0 @@
-/* Self-Replicating CloneSys Logic v35.0 */
