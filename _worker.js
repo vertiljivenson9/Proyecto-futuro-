@@ -1,1 +1,5 @@
-export default { fetch: (r) => fetch(r) };
+export default {
+  async fetch(request, env) {
+    return env.ASSETS.fetch(request);
+  }
+};
