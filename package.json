@@ -1,6 +1,7 @@
 {
-  "name": "vertil-os-sovereign",
+  "name": "vertil-2934",
   "version": "5.3.3",
+  "private": true,
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
